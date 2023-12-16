@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.main {
+    display: flex;
+}
+
+.result {
+    height: 70vh;
+    border-radius: 20px;
+    width: 25vw;
+    margin-block: 70px;
+    margin-left: 25%;
+    /* background: rgb(120,87,255); */
+    background: linear-gradient(90deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+
+}
+
+.result h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #D5CCFF;
+    padding-block: 15px;
+}
+
+.result h2 {
+    text-align: center;
+    color: #FEFFFF;
+}
+
+.result p {
+    text-align: center;
+    padding-inline: 20px;
+    color: #CBCFFF;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+    /* position: absolute; */
+    /* top: 32%;
+    left: 32%; */
+    padding: 10px;
+    margin-inline: 90px;
+}
+
+.circle span {
+    display: block;
+    text-align: center;
+}
+
+.circle .total-score {
+    color: #FEFCFF;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 490px;
+}
+
+.circle .out-of-score {
+    position: absolute;
+    top: 270px;
+    left: 500px;
+    color: #8F83FF;
+}
+
+.summary {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 25vw;
+    /* margin-left: 50%; */
+    margin-block: 70px;
+    height: 70vh;
+    /* margin-inline: 0 30px; */
+    /* box-shadow: 5px 10px #EAF0FC; */
+}
+
+.summary::before {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 665px;
+    width: 30px;
+    height: 70vh;
+    border-radius: 0 20px 20px 0;
+    background:  hsl(252, 100%, 67%);
+    z-index: 1;
+}
+
+.summary ul {
+    list-style: none;
+}
+
+.summary h3 {
+    font-size: 20px;
+    margin-inline: 40px;
+    padding-block: 10px;
+}
+
+.remarks {
+    height: 30px;
+    padding: 10px;
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    margin-block: 15px;
+}
+
+.remarks img {
+    margin-right: 10px;
+    margin-block: 5px;
+}
+
+.remarks span {
+    margin-right: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 13px;
+}
+
+.score {
+    padding-right: 0px;
+    align-self: flex-end;
+    position: absolute;
+    top: 13px;
+    right: 0px;
+}
+
+.reaction {
+    background-color: #FFF6F5;
+}
+
+.memory {
+    background-color: #FFFBF2;
+}
+
+.verbal {
+    background-color: #F2FBFA;
+}
+
+.visual {
+    background-color: #F3F3FD;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+}
+
+.orange {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+}
+
+.blue {
+    color: hsl(234, 85%, 45%);
+}
+
+.continue-btn {
+    position: absolute;
+    width: 250px;
+    padding: 10px;
+    margin-inline: 40px;
+    margin-block: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #303B59;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.continue-btn:hover {
+    background-color: #4C38F2;
+    color: white;
+}
